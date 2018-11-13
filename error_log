@@ -1,0 +1,4 @@
+[29-Oct-2018 17:56:24 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/mingorad/mingorad-com/html/setup/src/Magento/Setup/Module/Di/Compiler/Config/Chain/BackslashTrim.php on line 59
+[29-Oct-2018 17:56:24 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/mingorad/mingorad-com/html/vendor/composer/composer/src/Composer/Console/Application.php on line 78
+[01-Nov-2018 22:09:11 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/mingorad/mingorad-com/html/setup/src/Magento/Setup/Module/Di/Compiler/Config/Chain/BackslashTrim.php on line 59
+[01-Nov-2018 22:09:11 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/mingorad/mingorad-com/html/vendor/composer/composer/src/Composer/Console/Application.php on line 78

@@ -1,0 +1,116 @@
+.contact-index-index .page-main {
+  background: url("/pub/static/frontend/Mingo/default/en_US/images/cms/page/about/top-banner.png") repeat-x center top #fff;
+  max-width: 100%;
+  margin-top: -75px;
+  background-size: 100%; }
+
+.contact-index-index ul.mm-listview {
+  display: none; }
+
+.contact-index-index .action.primary {
+  border: none;
+  background: #00b39a; }
+
+.contact-index-index form .fieldset > .legend {
+  font-size: 1.4rem; }
+
+.contact-index-index h1.page-title {
+  display: none !important; }
+
+.contact-index-index .page-wrapper {
+  background-image: url("../images/cms/page/about/section1-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  padding: 0; }
+
+.contact-index-index .widget.block.block-static-block {
+  padding-bottom: 0 !important;
+  padding-top: 305px; }
+
+.contact-index-index h1.page-title:before {
+  content: url("../images/cms/page/about/contact-title.png");
+  height: 100px;
+  width: 100px;
+  display: block; }
+
+.contact-index-index .contact-message p {
+  font-size: 23px;
+  font-family: 'Montserrat';
+  color: #e36386; }
+
+.contact-index-index span.contact-number {
+  font-weight: bold;
+  color: #000;
+  text-decoration: underline; }
+
+.contact-index-index field.required {
+  text-align: left; }
+
+.contact-index-index .fieldset > .field.required > .label:after,
+.contact-index-index .fieldset > .field > .label,
+.contact-index-index .fieldset > .fields > .field > .label {
+  font-weight: 600;
+  color: #00b39a; }
+
+.contact-index-index .fields.label {
+  display: block;
+  text-align: left; }
+
+.contact-index-index input[type="text"],
+.contact-index-index textarea,
+.contact-index-index input[type="password"],
+.contact-index-index input[type="url"],
+.contact-index-index input[type="tel"],
+.contact-index-index input[type="search"],
+.contact-index-index input[type="number"],
+.contact-index-index input[type="datetime"],
+.contact-index-index input[type="email"] {
+  border: solid 2px #979797;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.19), inset 0px 1px 5px 0px #b7b4b4, 0 0px 0 #FFF; }
+
+.contact-index-index .fieldset > .field > .label {
+  display: block;
+  text-align: left;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  font-size: 19px; }
+
+.contact-index-index .field.email.required label span:after {
+  content: ' Address'; }
+
+.contact-index-index .field {
+  max-width: 360px;
+  margin: auto !important; }
+
+.contact-index-index .field.comment {
+  max-width: 594px;
+  margin: 0 auto 50px auto !important; }
+
+.contact-index-index .field.comment textarea {
+  min-height: 210px; }
+
+.contact-index-index button.action.submit.primary {
+  border-radius: 30px;
+  padding: 9px;
+  margin: auto;
+  width: 100%;
+  max-width: 360px;
+  text-transform: uppercase;
+  margin-bottom: 60px; }
+
+.contact-index-index .actions-toolbar .primary,
+.contact-index-index .actions-toolbar {
+  width: 100%;
+  display: block;
+  margin: auto;
+  max-width: 360px; }
+
+.contact-index-index .note {
+  display: none; }
+
+.contact-index-index #contact-form fieldset legend:first-child {
+  display: none; }

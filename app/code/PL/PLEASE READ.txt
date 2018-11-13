@@ -1,0 +1,1 @@
+We added two logins in the back end...Vantage and T1, both NMI processors. T1 will get all transactions $500 and over, Vantage the rest. This code can be found at the top of Nmi > Model > Directpost.php. I also added two additional fields to Nmi > etc > system.xml for the second processor login.--Lizzy Page 9/7/18. 

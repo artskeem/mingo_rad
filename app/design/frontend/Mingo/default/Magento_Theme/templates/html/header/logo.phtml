@@ -1,0 +1,38 @@
+<?php
+/**
+ * @var \Magento\Theme\Block\Html\Header\Logo $block
+ */
+?>
+
+<link  rel="stylesheet" type="text/css"   media="all" href="/justin.css" />
+<link  rel="stylesheet" type="text/css" id="artskeem"  media="all" href="/artskeem.css" />
+
+
+
+<script>
+/*require(['jquery'], function ($) {
+    $(window).load(function() {
+    
+
+        setInterval(function(){
+  
+
+            $('#artskeem').attr("href", "artskeem.css");
+        	console.log("artskeem.css reloaded");
+        
+            
+        }, 3000);
+   
+    });
+});*/
+</script>
+
+<?php $storeName = $block->getThemeName() ? $block->getThemeName() : $block->getLogoAlt();?>
+
+<a class="header-logo" href="<?= $block->getUrl('') ?>" title="<?= /* @escapeNotVerified */ $storeName ?>">
+    <img src="<?= /* @escapeNotVerified */ $block->getLogoSrc() ?>"
+         alt="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>"
+         <?= $block->getLogoWidth() ? 'width="' . $block->getLogoWidth() . '"' : '' ?>
+         <?= $block->getLogoHeight() ? 'height="' . $block->getLogoHeight() . '"' : '' ?>
+    />
+</a>

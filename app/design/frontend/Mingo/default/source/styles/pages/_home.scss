@@ -1,0 +1,245 @@
+.cms-home {
+    // Hide Magento page content
+    #maincontent, .columns {
+        display: none;
+    }
+
+    // Jumbotron
+    .jumbotron {
+        @include make-container;
+        background-color: $teal;
+        background-image: url('../images/cms/page/home/jumbotron-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        color: $white;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+
+        @include media-breakpoint-up(lg) {
+            background-size: 100% 100%;
+        }
+    }
+
+    .jumbotron-bottom {
+        position: absolute;
+        background-image: url('../images/cms/page/home/jumbotron-bg-bottom.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 45%;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .jumbotron-bottle {
+        @include make-col-ready;
+        @include make-col(3);
+        @include make-col-offset(2);
+        text-align: center;
+        min-height: 540px;
+
+        img {
+            @include img-fluid;
+            margin-top: 20px;
+            display: none;
+        }
+    }
+
+    .jumbotron-text {
+        @include make-col-ready;
+        @include make-col(5);
+        @include make-col-offset(1);
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(6);
+        }
+
+        .v-center {
+            margin-top: 42px;
+        }
+
+        img {
+            @include img-fluid;
+        }
+
+        [alt="Naturally"] {
+            display: none;
+            position: absolute;
+            left: (448px - 357px) / 2;
+            top: 50%;
+            max-width: 357px;
+            z-index: 1;
+            margin-top: -45px;
+        }
+
+        [alt="Good Vibes"] {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            max-width: 448px;
+            z-index: 2;
+            margin-top: 25px;
+        }
+    }
+
+    // Flavor Slider
+    .flavors {
+        @include make-container;
+        position: relative;
+        color: $teal;
+        text-align: center;
+        background-color: $white;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        box-shadow: 0 3px 6px 0 rgba(0,0,0,.24);
+
+        // Seperator Triangle
+        &:after {
+            position: absolute;
+            content: '';
+            pointer-events: none;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            transform: scale(1, 0.5) translateX(-50%) rotate(45deg);
+            bottom: -50px;
+            z-index: 10;
+            background: inherit;
+            box-shadow: 6px 6px 6px 0 rgba(0,0,0,.24);
+        }
+    }
+
+    .flavor-image-slider {
+        @include make-row;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+
+        img {
+            @include img-fluid;
+            transition: 0.6s all;
+        }
+    }
+
+    // Marketing Icons
+    .marketing {
+        @include make-container;
+        background-color: $teal;
+        background-repeat: no-repeat;
+        background-image: url('../images/cms/page/home/marketing-bg.png');
+        background-size: cover;
+        width: 100%;
+        color: $white;
+        padding: 2rem 1rem 1rem 1rem;
+
+        .row {
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1.75rem;
+            margin-bottom: 1.25rem;
+        }
+    }
+
+    .marketing-item {
+        @include make-col-ready;
+        @include make-col(12);
+        text-align: center;
+        margin: 0 auto 1rem auto;
+
+        @include media-breakpoint-up(sm) {
+            @include make-col(6);
+        }
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(4);
+        }
+
+        h2 {
+            margin-top: 1rem;
+            font-weight: 700;
+            font-size: 2rem;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 2.5rem;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    // B2B
+    .b2b {
+        @include make-container;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .row {
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .b2b-content {
+        @include make-col-ready;
+        @include make-col(8);
+
+        h4 {
+            font-size: 3rem;
+            color: $teal;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            line-height: 2rem;
+        }
+    }
+
+    .b2b-buttons {
+        @include make-col-ready;
+        @include make-col(3);
+        @include make-col-offset(1);
+        text-align: center;
+
+        a {
+            display: inline-block;
+
+            @include first(1) {
+                margin-bottom: 2rem;
+            }
+
+            &:hover {
+                img {
+                    &:last-child {
+                        display: inline;
+                    }
+
+                    &:first-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        img {
+            @include img-fluid;
+
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}

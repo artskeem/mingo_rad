@@ -1,0 +1,134 @@
+<div class="product-card-container left">
+    <div class="product-card template" style="display: none">
+        <h2><a href="#">{{ logo }}</a></h2>
+        <div class="product-card-image">
+            {{ image }}
+        </div>
+        <small>Select Strength (mg)</small>
+        <div class="product-card-strength">
+            <div class="btn-group" role="group" aria-label="Strength (mg)">
+                <button type="button" class="btn">500</button>
+                <button type="button" class="btn">750</button>
+                <button type="button" class="btn">1500</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="product-card-price">
+                {{ price }}
+            </div>
+            <div class="product-card-button">
+                {{ button }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="signpost">
+    <ul>
+    <<li class="plank plank-mocha-af" data-container="right" style="height:20px">
+        <!--    <img data-target="mocha-af" src="<?= $block->getViewFileUrl('images/cms/block/category-navigation/plank-mocha-af.png') ?>" srcset="<?= $block->getViewFileUrl('images/cms/block/category-navigation/plank-mocha-af@2x.png') ?> 2x">-->
+        </li>
+        
+        <li class="plank plank-melon-h2o" data-container="left">
+            <img data-target="melon-h2o" src="<?= $block->getViewFileUrl('images/cms/block/category-navigation/plank-melon-h2o.png') ?>" srcset="<?= $block->getViewFileUrl('images/cms/block/category-navigation/plank-melon-h2o@2x.png') ?> 2x">
+        </li>
+        
+         <li class="plank plank-electric-razz" data-container="right">
+            <img data-target="electric-razz" src="<?= $block->getViewFileUrl('images/cms/block/category-navigation/plank-electric-razz.png') ?>" srcset="<?= $block->getViewFileUrl('images/cms/block/category-navigation/plank-electric-razz@2x.png') ?> 2x">
+        </li>
+        
+        <li class="plank plank-coco-keypine" data-container="left">
+            <img data-target="coco-keypine" src="<?= $block->getViewFileUrl('images/cms/block/category-navigation/plank-coco-keypine.png') ?>" srcset="<?= $block->getViewFileUrl('images/cms/block/category-navigation/plank-coco-keypine@2x.png') ?> 2x">
+        </li>
+      
+       
+        <li class="plank plank-sugar-cane" data-container="left">
+            <img data-target="sugar-cane" src="<?= $block->getViewFileUrl('images/cms/block/category-navigation/plank-sugar-cane.png') ?>" srcset="<?= $block->getViewFileUrl('images/cms/block/category-navigation/plank-sugar-cane@2x.png') ?> 2x">
+        </li>
+    
+       
+<!--        <li class="plank plank-vape-enhancers" data-container="right">
+            <img data-target="vape-enhancers" src="<?= $block->getViewFileUrl('images/cms/block/category-navigation/plank-vape-enhancers.png') ?>" srcset="<?= $block->getViewFileUrl('images/cms/block/category-navigation/plank-vape-enhancers@2x.png') ?> 2x">
+        </li>
+-->    </ul>
+</div>
+
+<div class="product-card-container right">
+    <!-- Empty -->
+</div>
+
+<script>
+require(['jquery'], function ($) {
+    $(document).ready(function() {
+        var $productCard = $('.product-card.template');
+
+        // Create product cards for all products on page
+        $('ol.products').find('li').each(function(i, e) {
+            var $elem = $(e);
+
+            // Clone
+            var $clone = $productCard.clone();
+            $clone.removeClass('template');
+
+            // Title
+            var $a = $elem.find('.product-item-link').clone().removeClass('product-item-link');
+            $clone.find('h2').empty().append($a);
+
+            // Slug
+            var slug = slugify($a.text());
+            if (! slug) {
+                slug = slugify($a.find('img').attr('title'));
+            }
+            $clone.attr('data-product-slug', slug);
+
+            // Image
+            var $img = $elem.find('.product-image-photo').clone().removeClass('product-image-photo');
+            $clone.find('.product-card-image').empty().append($a.clone().empty().append($img));
+
+            // Price
+            var $price = $elem.find('.price').clone();
+            $clone.find('.product-card-price').empty().text($price.text());
+
+            // Add to Cart
+            var $addToCart = $elem.find('[data-role="tocart-form"]').clone();
+            $clone.find('.product-card-button').empty().append($addToCart);
+
+            // Target
+            var direction = $('[data-target="' + slug + '"]').parent('.plank').attr('data-container');
+
+            $clone.appendTo('.product-card-container.' + direction);
+        });
+
+        // Add hover action to planks
+        $('.plank').find('img').each(function(i, e) {
+            var $elem = $(e);
+            var target = $elem.attr('data-target');
+
+
+                
+            $elem.hover(function() {
+                var $card = $('[data-product-slug="' + target + '"]');
+
+                if (! $card.hasClass('active')) {
+                    $('.product-card').fadeOut('fast').removeClass('active');
+                    $card.addClass('active').fadeIn('slow');
+                }
+            }, function() {
+                // Do nothing
+            });
+    
+            $elem.click(function(e) {
+                var $product_link = $(this).closest("li").attr("class").replace("plank plank-", "");
+                
+                console.log($product_link+"sxsx");
+                window.location = '/'+$product_link;
+          
+            });
+    
+    
+    
+        });
+    });
+});
+</script>

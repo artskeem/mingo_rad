@@ -1,0 +1,52 @@
+.minicart-wrapper {
+    float: none !important;
+    margin-left: 0 !important;
+
+    > a {
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &:before {
+            content: none !important;
+        }
+
+        .text {
+            width: auto !important;
+            position: static !important;
+            clip: auto !important;
+            overflow: visible !important;
+        }
+
+        .counter {
+            background: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: visible !important;
+
+            &.empty {
+                display: inline-block !important;
+            }
+
+            .counter-number {
+                text-shadow: none !important;
+            }
+
+            .counter-label {
+
+            }
+        }
+    }
+
+    button:focus {
+        outline: none !important;
+    }
+
+    .block-minicart {
+        color: #000;
+
+        .action.close {
+            line-height: 1rem;
+            color: #666;
+        }
+    }
+}

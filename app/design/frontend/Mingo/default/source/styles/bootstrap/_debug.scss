@@ -1,0 +1,48 @@
+.bootstrap-debug {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+
+    span {
+        background-color: #444;
+        font-family: monospace;
+        padding: 5px;
+        color: #fff;
+
+        &.xs {
+            opacity: .5;
+            @include media-breakpoint-only(xs) {
+                opacity: 1;
+            }
+        }
+
+        &.sm {
+            opacity: .5;
+            @include media-breakpoint-only(sm) {
+                opacity: 1;
+            }
+        }
+
+        &.md {
+            opacity: .5;
+            @include media-breakpoint-only(md) {
+                opacity: 1;
+            }
+        }
+
+        &.lg {
+            opacity: .5;
+            @include media-breakpoint-only(lg) {
+                opacity: 1;
+            }
+        }
+
+        &.xl {
+            opacity: .5;
+            @include media-breakpoint-up(xl) {
+                opacity: 1;
+            }
+        }
+    }
+}

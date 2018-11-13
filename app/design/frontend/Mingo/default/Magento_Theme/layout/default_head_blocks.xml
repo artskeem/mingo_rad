@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="css/styles.min.css" media="all" />        
+        <css src="css/contact.css" media="all" />
+         <css src="css/checkout.css" media="all" />
+          <css src="css/product-view.css" media="all" />
+          
+        <script src="js/main.min.js" />
+
+        <!-- Add Font Awesome via CDN -->
+        <css src="https://use.fontawesome.com/releases/v5.1.0/css/all.css" src_type="url" />
+        <!-- <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" src_type="url" /> -->
+
+        <!-- Remove Magento's print stylesheet -->
+        <remove src="css/print.css" />
+    </head>
+    <body>
+        <referenceContainer name="after.body.start">
+            <block class="Magento\Framework\View\Element\Template" name="head.typekit" as="typekit" template="Magento_Theme::js/typekit.phtml" before="-"/>
+        </referenceContainer>
+    </body>
+</page>

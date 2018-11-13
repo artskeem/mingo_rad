@@ -1,0 +1,286 @@
+<?php /** JUMBOTRON **/ ?>
+<section class="jumbotron">
+    <div class="row">
+        <div class="jumbotron-bottle">
+            <img src="<?php echo $block->getViewFileUrl('images/cms/page/home/bottle.png'); ?>" class="v-center">
+        </div>
+        <div class="jumbotron-text">
+            <img src="<?php echo $block->getViewFileUrl('images/cms/page/home/jumbotron-naturally.png'); ?>" alt="Naturally">
+            <img src="<?php echo $block->getViewFileUrl('images/cms/page/home/jumbotron-good-vibes.png'); ?>" alt="Good Vibes">
+        </div>
+    </div>
+    <div class="jumbotron-bottom"></div>
+</section>
+
+<script>
+require(['jquery'], function ($) {
+    $(window).load(function() {
+        $('[alt="Naturally"]').show().animateCss('slideInUp', function() {
+            $('[alt="Good Vibes"]').show().addClass('animated fadeIn');
+        });
+    });
+});
+</script>
+
+<?php /** FLAVOR SLIDER **/ ?>
+<section class="flavors">
+    <div class="nav_arrows">
+        <a href="javascript:void(0)" class="l-arrow"><img src="/pub/static/frontend/Mingo/default/en_US/images/cms/page/home/left-arrow.png"></a>
+        <a href="javascript:void(0)" class="r-arrow"><img src="/pub/static/frontend/Mingo/default/en_US/images/cms/page/home/right-arrow.png"></a>
+    </div>
+    
+        https://www.mingorad.com/melon-h2o
+   
+    https://www.mingorad.com/coco-keypine
+    https://www.mingorad.com/sugar-cane
+    <div class="flavor-image-slider">
+        <div id="flavor-slider"></div>
+        <div id="flavor-slider-data" style="display: none;">
+            <div data-cat="">
+                <ul>
+                    <li data-thumbmail-url="https://www.mingorad.com/electric-razz" data-thumbnail-path="<?php echo $block->getViewFileUrl('images/cms/page/home/flavors/blue_raspberry.png'); ?>" data-thumbnail-text="some text here"></li>
+                </ul>
+                <ul>
+                    <li  data-thumbmail-url="https://www.mingorad.com/electric-razz" data-thumbnail-path="<?php echo $block->getViewFileUrl('images/cms/page/home/flavors/coco_keylime.png'); ?>" data-thumbnail-text="some text here"></li>
+                </ul>
+                <ul>
+                    <li  data-thumbmail-url="https://www.mingorad.com/electric-razz" data-thumbnail-path="<?php echo $block->getViewFileUrl('images/cms/page/home/flavors/watermelon.png'); ?>" data-thumbnail-text="some text here"></li>
+                </ul>
+                <!--ul>
+                    <li data-thumbnail-path="<?php echo $block->getViewFileUrl('images/cms/page/home/flavors/mocha.png'); ?>" data-thumbnail-text="some text here"></li>
+                </ul -->
+                <ul>
+                    <li  data-thumbmail-url="https://www.mingorad.com/electric-razz" data-thumbnail-path="<?php echo $block->getViewFileUrl('images/cms/page/home/flavors/sugar_cane.png'); ?>" data-thumbnail-text="some text here"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+require(['jquery'], function ($) {
+    $(document).ready(function() {
+        $(".nav_arrows").insertBefore("flavor-slider-fluidwidth");
+    });
+});
+
+FWDS3DCUtils.onReady(function(){
+    var carousel = new FWDS3DCarousel({
+        carouselHolderDivId: 'flavor-slider',
+        carouselDataListDivId: 'flavor-slider-data',
+        displayType: "fluidwidth",
+        fluidWidthZIndex: 1,
+        autoScale: "yes",
+        carouselWidth: 400,
+        carouselHeight: 350,
+        mainFolderPath: "/pub/static/frontend/Mingo/default/en_US/images/cms/page/home/",
+        skinPath: "fwds3dcarousel",
+        rightClickContextMenu: 'default',
+        initializeOnlyWhenVisible: "no",
+
+        //main settings
+        addKeyboardSupport:"yes",
+        enableMouseWheelScroll:"no",
+        useDragAndSwipe:"yes",
+        backgroundColor: "transparent",
+        backgroundImagePath:"",
+        backgroundRepeat:"repeat-x",
+        carouselStartPosition:"center",
+        carouselTopology:"normal",
+        carouselXRadius:600,
+        carouselYRadius:0,
+        carouselXRotation:10,
+        carouselYOffset:0,
+        showCenterImage:"no",
+        centerImagePath:"content/images/logo.png",
+        centerImageYOffset:0,
+        slideshowDelay:5000,
+        autoplay:"no",
+        
+        showNextAndPrevButtons:"yes",
+
+
+
+
+        //thumbnail settings
+        thumbnailWidth: 400,
+        thumbnailHeight: 350,
+        thumbnailMinimumAlpha: .25,
+        maxNumberOfThumbnailsOnMobile:13,
+        showTextUnderThumbnail:"yes",
+        showText:"yes",
+        showReflection:"no",
+        reflectionHeight:0,
+        reflectionDistance:0,
+        reflectionOpacity:.4,
+
+        //combobox settings
+        showComboBox:"no",
+        startAtCategory: 1,
+        showAllCategories: "no",
+    });
+    
+ 
+
+
+    
+    
+});
+
+require(['jquery'], function ($) {
+$(document).ready(function(){
+  	$(".nav_arrows").insertBefore("flavor-slider-fluidwidth");	
+    	console.log("arrows");
+  
+
+    var fire_once = 0;
+ 	var product_content  = [
+	    "Meleon H2O",
+	    "Electric Razz",
+	    "Sugar Cane",
+	    "Mocha AF",
+	    "Coco Keypine",
+	];
+      
+  jQuery("#flavor-slider-fluidwidth div div div div div").hover(function(){
+	    
+        console.log("slider loaded");
+        
+         jQuery("#flavor-slider-fluidwidth div div div div div").each(function(index){
+                if(!jQuery("div", this).hasClass("tooltip")){
+                            jQuery(this).append('<div class="tooltip active" data-tooltip="1" style="top: 84px;left: 12px;z-index: 999998;"><div class="arrow">'+product_content[index]+'</div></div>');
+                            console.log(product_content[index]);
+                }
+         }); // end foreach
+        
+             
+         }); // end hover
+    
+
+
+    
+}); // end doc ready
+}); // end jquery
+</script>
+
+<style>
+/* styles for the tool tip*/
+
+.tooltip, .arrow:after {
+  background: black;
+  border: 2px solid white;
+}
+
+.tooltip {
+  pointer-events: none;
+  opacity: 0;
+  display: inline-block;
+  position: absolute;
+  padding: 10px 20px;
+  color: #bfbfbf;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font: bold 14px "Helvetica Neue", Sans-Serif;
+  font-stretch: condensed;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 0 7px black;
+}
+.arrow {
+  width: 70px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -16px;
+}
+.arrow:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  width: 25px;
+  height: 25px;
+  -webkit-box-shadow: 6px 5px 9px -9px black,
+                      5px 6px 9px -9px black;
+  -moz-box-shadow: 6px 5px 9px -9px black,
+                   5px 6px 9px -9px black;
+  box-shadow: 6px 5px 9px -9px black,
+              5px 6px 9px -9px black;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+}
+.tooltip.active {
+  opacity: 1;
+  margin-top: 5px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -ms-transition:     all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+}
+.tooltip.out {
+  opacity: 0;
+  margin-top: -20px;
+}    
+    
+</style>
+
+
+<?php /** MARKETING ICONS **/ ?>
+<section class="marketing">
+    <div class="row">
+        <div class="marketing-item">
+            <img src="<?php echo $block->getViewFileUrl('images/cms/page/home/marketing-usa.svg'); ?>" alt="USA Icon">
+            <h2>USA Grown</h2>
+            <p>
+                All of our products contain<br>
+                nothing but domestically-<br>
+                sourced premium CBD oil.
+            </p>
+        </div>
+        <div class="marketing-item">
+            <img src="<?php echo $block->getViewFileUrl('images/cms/page/home/marketing-leaf.svg'); ?>" alt="Leaf Icon">
+            <h2>All-Natural</h2>
+            <p>
+                When we say all natural,<br>
+                we mean absolutely no by-<br>
+                products make their way in.
+            </p>
+        </div>
+        <div class="marketing-item">
+            <img src="<?php echo $block->getViewFileUrl('images/cms/page/home/marketing-thc.svg'); ?>" alt="No THC Icon">
+            <h2>0% THC</h2>
+            <p>
+                Using a unique method of<br>
+                extraction, our products<br>
+                contain zero percent THC.
+            </p>
+        </div>
+    </div>
+</section>
+
+<?php /** B2B **/ ?>
+<section class="b2b">
+    <div class="row">
+        <div class="b2b-content">
+            <div class="v-center">
+                <h4>The New Wave in CBD Vapes</h4>
+                <p>Lorem ipsum dolor amet humblebrag readymade copper mug, portland man bun health goth mixtape bespoke fingerstache pour-over. Tote bag fanny pack fam narwhal heirloom vegan edison bulb VHS roof party. VHS vape forage live-edge bicycle rights chia adaptogen farm-to-table flannel mustache flexitarian</p>
+            </div>
+        </div>
+        <div class="b2b-buttons">
+            <a href="#" title="Wholesale" class="wholesale">
+                <img src="<?= $block->getViewFileUrl('images/cms/page/home/btn-wholesale.png') ?>" srcset="<?= $block->getViewFileUrl('images/cms/page/home/btn-wholesale@2x.png') ?> 2x" alt="Wholesale Button">
+                <img src="<?= $block->getViewFileUrl('images/cms/page/home/btn-wholesale-hover.png') ?>" srcset="<?= $block->getViewFileUrl('images/cms/page/home/btn-wholesale-hover@2x.png') ?> 2x" alt="Wholesale Button Hover">
+            </a>
+            <a href="#" title="Affiliates" class="affiliates">
+                <img src="<?= $block->getViewFileUrl('images/cms/page/home/btn-affiliates.png') ?>" srcset="<?= $block->getViewFileUrl('images/cms/page/home/btn-affiliates@2x.png') ?> 2x" alt="Affiliates Button">
+                <img src="<?= $block->getViewFileUrl('images/cms/page/home/btn-affiliates-hover.png') ?>" srcset="<?= $block->getViewFileUrl('images/cms/page/home/btn-affiliates-hover@2x.png') ?> 2x" alt="Affiliates Button Hover">
+            </a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <nmi_directpost>
+                <active>0</active>
+                <model>PL\Nmi\Model\Directpost</model>
+                <title>Nmi Payment - Direct Post(Credit Cards)</title>
+                <payment_action>authorize_capture</payment_action>
+                <cctypes>VI,MC</cctypes>
+                <allowspecific>0</allowspecific>
+                <debug>0</debug>
+            </nmi_directpost>
+        </payment>
+    </default>
+</config>

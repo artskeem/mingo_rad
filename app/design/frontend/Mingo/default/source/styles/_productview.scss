@@ -1,0 +1,83 @@
+
+
+.catalog-product-view .breadcrumbs {
+    display: none;
+}
+
+.catalog-product-view 
+.description h1 {
+    color: #4990e2;
+    font-weight: bold;
+}
+
+.catalog-product-view .page-wrapper {background-image: url(http://www.mingorad.com/pub/static/frontend/Mingo/default/en_US/images/cms/page/about/behind-the-brand-bg.png);background-repeat: no-repeat;background-size: cover;}
+
+
+.catalog-product-view .product-info-main {
+    box-shadow: 0px 1px 2px 2px #0000002e;
+    background: #ffffff;
+    padding: 3px 30px;
+    border-radius: 8px;
+}
+
+.catalog-product-view button#product-addtocart-button {
+    background-color: #e36386;
+    border-color: #ccc;
+    border-radius: 46px;
+    padding: 5px 5px;
+}
+
+
+.catalog-product-view 
+div#description {
+    background: transparent;
+    border-top:solid 1px #ccc;
+    margin-top:70px
+}
+
+.catalog-product-view
+a#tab-label-reviews-title, 
+.catalog-product-view
+div#tab-label-description {
+    border: none !important;
+    background-color:transparent !important;
+    color:#000;
+
+    
+}
+
+.catalog-product-view .product.data.items > .item.title > .switch {
+    border: solid 6px #4990e2;
+    border-radius:  200px;
+    padding: 0 10px;
+    line-height: normal;
+    color: #000 !important;
+    margin: 10px 55px;
+}
+
+.catalog-product-view
+button#product-addtocart-button {
+    background: #E36386;
+    border: solid 2px #F8E5E8;
+    border-radius: 200px;
+    padding: 10px;
+}
+
+.catalog-product-view
+.field.choice.admin__field.admin__field-option.required {
+    background-color: #007D5B;
+    border-radius: 200px;
+    padding: 8px 18px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.catalog-product-view
+.field.choice.admin__field.admin__field-option.required .label{margin-bottom:0;}
+
+.catalog-product-view
+span.price-notice {
+    display: none;
+}

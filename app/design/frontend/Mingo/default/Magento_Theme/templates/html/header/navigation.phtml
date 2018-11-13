@@ -1,0 +1,84 @@
+<div class="navigation-wrapper">
+    <div class="navigation-row">
+        <nav class="navigation-left">
+            <a href="#navigation-mobile" class="navigation-mobile-toggle">
+                <img src="<?php echo $this->getViewFileUrl('images/menu.svg'); ?>" alt="Menu">
+            </a>
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <?php /** <li><?= $block->getChildHtml() ?></li> **/ ?>
+                <!-- <li><a href="#">Support</a></li> -->
+            </ul>
+        </nav>
+        <nav class="navigation-right">
+            <ul>
+                <!-- <li><a href="#">Wholesale</a></li> -->
+                <li class="nav-shop-now">
+                    <a class="nav-link-shop-now" href="#">Shop Now</a>
+                </li>
+                <li class="mobile-minicart">
+                    <a href="/checkout/cart/">
+                        <img src="<?php echo $this->getViewFileUrl('images/cart.svg'); ?>" alt="Shopping Cart">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<nav id="navigation-mobile">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/support">Support</a></li>
+        <li><a href="/wholesale">Wholesale</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <?php /**
+        <li>
+            <a href="/about/">About us</a>
+            <ul>
+                <li><a href="/about/history/">History</a></li>
+                <li><a href="/about/team/">The team</a></li>
+                <li><a href="/about/address/">Our address</a></li>
+            </ul>
+        </li>
+        **/ ?>
+    </ul>
+</nav>
+
+<script>
+require(['jquery', 'mmenu'], function ($) {
+    $(document).ready(function () {
+        $('#navigation-mobile').mmenu({
+            extensions: [
+                'position-front',
+                'fullscreen'
+            ],
+            setSelected: {
+                hover: true
+            },
+            navbars: [{
+                position: 'top',
+                content: [
+                    'prev',
+                    'close'
+                ],
+            }, {
+                position: 'bottom',
+                content: [
+                    '<a class="fa fa-envelope" href="#"></a>',
+                    '<a class="fa fa-twitter" href="#"></a>',
+                    '<a class="fa fa-facebook" href="#"></a>'
+                ]
+            }]
+        }, {
+            offCanvas: {
+                pageSelector: '.page-wrapper'
+            }
+        });
+    });
+});
+</script>

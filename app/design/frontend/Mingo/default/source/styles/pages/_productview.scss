@@ -1,0 +1,313 @@
+.catalog-product-view {
+
+    .breadcrumbs {
+        display: none;
+    }
+
+    .description h1 {
+        color: #4990e2;
+        font-weight: bold;
+    }
+
+    .page-wrapper {
+        background-image: url(http://www.mingorad.com/pub/static/frontend/Mingo/default/en_US/images/cms/page/about/behind-the-brand-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    main#maincontent {
+        background: url(http://mingorad.com/pub/static/frontend/Mingo/default/en_US/images/cms/page/products/h2-splash.png);
+        max-width: 100%;
+        padding: 0 16%;
+        background-repeat: no-repeat;
+        background-position: 0px 30px;
+    }
+
+    .product-info-main {
+        box-shadow: 0px 1px 2px 2px #0000002e;
+        background: #ffffff;
+        padding: 3px 30px;
+        border-radius: 8px;
+    }
+
+    button#product-addtocart-button {
+    background: #e36386;
+    border: 2px solid #f8e5e8;
+    border-radius: 200px;
+    padding: 10px 29px;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 300px;
+    width: 100%;
+    
+    }
+    
+    .field.qty label.label {
+    display: none;
+}
+
+    div#description {
+        background: transparent;
+        border-top:solid 2px #ccc;
+        margin-top:70px
+    }
+
+    a#tab-label-reviews-title,
+    div#tab-label-description {
+          border: 6px solid transparent;
+        background-color:transparent !important;
+        color:#000;
+    }
+
+.product.data.items.title.active>.item.title>.switch {
+border: 6px solid #4990e2;
+    border-radius: 200px;
+    padding: 6px 20px;
+    line-height: normal;
+    color: #000!important;
+    margin: -15px 9px;
+    text-transform: uppercase;
+        height: 52px;
+    }
+
+    .field.choice.admin__field.admin__field-option.required {
+        background-color: #02b39a;
+    padding: 10px 25px;
+        text-align: center;
+        color: #fff !important;
+        font-weight: bold;
+        display: inline-block;
+            font-size: 22px;
+    }
+
+    // choose strength section
+    .options-list.nested > div:first-child {
+        border-top-left-radius: 200px;
+        border-bottom-left-radius: 200px;
+    }
+
+    .options-list.nested > div:last-child {
+        border-top-right-radius: 200px;
+        border-bottom-right-radius: 200px;
+    }
+
+    .field.choice.admin__field.admin__field-option.required .label {
+        margin-bottom:0;
+    }
+
+    .radio,
+    span.price-notice {
+        display: none;
+    }
+
+    .field.choice.admin__field.admin__field-option.required:hover,
+    .field.choice.admin__field.admin__field-option.required span:hover {
+        background-color: #007d5b;
+        cursor: pointer;
+    }
+
+    .field.choice.admin__field.admin__field-option.required:hover{
+        box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.32), inset 0 1px 8px 0px #335653, 0 0 0 #564141;
+    }
+
+    .options-list.nested > div:last-child {
+        border-top-right-radius: 200px;
+        border-bottom-right-radius: 200px;
+    }
+
+    .options-list.nested > div:first-child {
+        border-top-left-radius: 200px;
+        border-bottom-left-radius: 200px;
+    }
+
+    a#tab-label-reviews-title {
+        text-transform: uppercase;
+    }
+
+    div#tab-label-description {
+        text-transform: uppercase;
+    }
+
+    div#product-options-wrapper {
+        text-align: center;
+    }
+
+    .product-add-form .product-options-wrapper .field .control {
+        width:auto;
+    }
+
+    .product-add-form .product-options-wrapper {
+        border:solid 2px #c3c3c3;
+        border-right:none;
+        border-left:none;
+        padding:10px
+    }
+ 
+
+    input#qty {
+        box-shadow: inset 0 0 2px rgba(0,0,0,.32), inset 0 1px 8px 0 #5f5f5f, inset 0 0 0px 0px #000000;
+      border-radius: 30px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 23px;
+    padding: 26px 0;
+    font-size: 20px;
+    color: #9a9797;
+    width: 90px;
+    font-weight: 700;
+    }
+
+.box-tocart .action.tocart {
+    margin-bottom: 0;
+    margin-right: 1%;
+    max-width:270px;
+    width: 100%;
+}
+.product-info-main .product-options-bottom .box-tocart {
+    margin-top: 20px;
+    max-width: 420px;
+    margin: auto;
+}
+
+
+    div#product-options-wrapper .label {
+        color: #9797A3;
+        text-transform: uppercase;
+    }
+
+    .field.choice.admin__field.admin__field-option.required span{
+        color:#fff
+    }
+
+    .page{padding-top:50px;}
+
+    .page-title-wrapper.product {
+        background: url(http://www.mingorad.com/pub/media/wysiwyg/MelonH2O.png) no-repeat center center;
+      height: 110px;
+    background-size: contain;
+    margin: 80px 0 0 24px;
+    }
+
+    h1.page-title span{opacity:0}
+
+    .product-info-main .product-info-price {
+        border-bottom: solid 2px #433c3c;
+    }
+
+
+    .fotorama__caption__wrap {
+    display: none;
+}
+
+.product-social-links {
+    display: none;
+}
+
+
+
+
+
+.value {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.product.info.detailed {
+    padding-top: 100px;
+}
+
+
+ul#flavors {
+    margin: 0;
+    background-color: #F5F5F5;
+    padding: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    height: 63px;
+}
+.catalog-product-view .page-title-wrapper.product {
+    background: url(http://mingorad.com/pub/media/wysiwyg/MelonH2O.png) no-repeat 50%;
+    height: 110px;
+    background-size: contain;
+    margin: 80px 0 0 24px;
+}
+.grape-ico{ background:url('/pub/media/wysiwyg/BlueRazz.png') no-repeat center; }
+.melon-ico{ background:url('/pub/media/wysiwyg/Melon.png') no-repeat center; }
+.mocha-ico{ background:url('/pub/media/wysiwyg/Mocha.png') no-repeat center; }
+.pine-ico{ background:url('/pub/media/wysiwyg/Pineapple.png') no-repeat center; }
+.sugar-ico{ background:url('/pub/media/wysiwyg/SugarCane.png') no-repeat center; }
+
+ul#flavors li {
+    display: table-cell;
+    margin-bottom: 0;
+    height: 63px;
+    width: -webkit-fill-available;
+}
+
+ul#flavors li:eq(0) a{border:none;}
+
+ul#flavors li a{
+    display: block;
+    padding: 15px 11px;
+    border-left: 1px solid #ccc;
+    margin-top: 15px;
+    width: 100px;
+    background-size: contain;
+}
+li.option_sel_mg {
+    background-color: #fff;
+}
+
+li.option_sel_mg a {
+border:none;
+}
+.catalog-product-view a#tab-label-reviews-title, .catalog-product-view div#tab-label-description {
+ 
+    margin-top: -5px;
+}
+.product-info-main {
+
+    position:relative;
+}
+
+.reviews-actions {
+    display: none;
+}
+
+.product-reviews-summary.empty {
+    display: none;
+}
+
+
+.product-info-stock-sku {
+    display: none !important;
+}
+
+.price-box.price-final_price {
+    text-align: right;
+}
+
+.product-info-main .product-add-form {
+    padding-top: 0;
+}
+
+.value ul li {
+    margin-bottom: 0;
+}
+
+.overview p {
+    padding: 0 1em;
+}
+ 
+
+.product-options-bottom {
+    padding-bottom: 20px;
+}
+
+    
+}

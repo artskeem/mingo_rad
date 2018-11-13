@@ -1,0 +1,140 @@
+$navigation-height-sm: 43px;
+$navigation-height-lg: 70px;
+
+.navigation-wrapper {
+    @include make-container;
+    height: $navigation-height-sm;
+    background-color: $white;
+
+    @include media-breakpoint-up(md) {
+        height: $navigation-height-lg;
+    }
+
+    .navigation-row {
+        @include make-row;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navigation-left, .navigation-right {
+        @include make-col-ready;
+        @include make-col(5);
+        max-height: $navigation-height-sm;
+        line-height: $navigation-height-sm;
+        vertical-align: middle;
+        white-space: nowrap;
+        padding-left: 0;
+        padding-right: 0;
+
+        @include media-breakpoint-up(md) {
+            max-height: $navigation-height-lg;
+            line-height: $navigation-height-lg;
+        }
+    }
+
+    .navigation-left {
+        ul {
+            display: none;
+
+            @include media-breakpoint-up(md) {
+                display: initial;
+            }
+        }
+    }
+
+    .navigation-right {
+        @include make-col-offset(2);
+        text-align: right;
+
+        @include media-breakpoint-down(sm) {
+            li {
+                display: inline-block;
+
+                &:not(:last-child) {
+                    display: none;
+                }
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            .mobile-minicart {
+                display: none;
+            }
+        }
+    }
+
+    ul {
+        @include list-unstyled;
+        display: inline-block;
+        margin-bottom: 0;
+        line-height: 1rem;
+
+        > li {
+            display: inline-block;
+            margin-bottom: 0;
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+            &.nav-shop-now {
+                margin-right: 0;
+            }
+        }
+    }
+
+    a {
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 40px;
+        line-height: 40px;
+        color: $teal;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.125rem;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        &:visited {
+            color: $teal;
+        }
+
+        &.nav-link-shop-now {
+            background-color: $teal;
+            color: $white;
+            border-radius: 100px;
+            padding: .5rem 1rem;
+        }
+    }
+
+    // Override Magento
+    .navigation {
+        background: none !important;
+
+        ul, a {
+            padding: 0 !important;
+        }
+    }
+}
+
+#navigation-mobile {
+    display: none;
+
+    @include media-breakpoint-down(sm) {
+        display: block;
+    }
+}
+
+.navigation-mobile-toggle {
+    display: none;
+
+    @include media-breakpoint-down(sm) {
+        display: inline-block;
+    }
+}

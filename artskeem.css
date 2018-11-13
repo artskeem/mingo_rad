@@ -1,0 +1,925 @@
+.jumbotron-bottom {
+    background-image: none !important;
+    background-position: bottom;
+    
+}
+
+.cms-home .page-main{display:none;}
+.marketing{
+    
+        padding: 4rem 1rem 4rem;
+}
+
+.marketing-content .row {
+    max-width: 1280px;
+    margin: 1.75rem auto 1.25rem;
+}
+
+.marketing-content{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    padding: 2rem 1rem 1rem;
+}
+.marketing-content .marketing-item h2{
+    
+    color:#00B39A;
+    
+}
+.flavors {
+    height: 485px;
+}
+
+div#flavor-slider-fluidwidth{
+    height: 423px !important;
+    padding: 50px 0 !important;
+}
+
+
+.nav_arrows {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    top: 154px;
+}
+
+.nav_arrows a{position:absolute;}
+.nav_arrows a.l-arrow{left:0}
+.nav_arrows a.r-arrow{right:0}
+
+.b2b-buttons{display:none;}
+
+
+.cms-home .jumbotron{
+background-image: url(/pub/static/frontend/Mingo/default/en_US/images/cms/page/home/Mingo_Rad_Header_back_repeat_x.png);
+background-size: contain;
+background-position:center;
+background-repeat:repeat-x;
+}
+
+.jumbotron-text [alt=Naturally] {
+        margin-top: -40px;
+}
+.jumbotron .row {
+
+background-image: url(/pub/static/frontend/Mingo/default/en_US/images/cms/page/home/Mingo_Rad_home_banner.png);
+
+background-size: contain;
+
+background-position: center;
+
+background-repeat: no-repeat;
+}
+
+
+.jumbotron-text {
+ 
+    min-height: 612px;
+    
+}
+
+.signpost
+.plank img {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	-webkit-transform: perspective(500px);
+	-moz-transform: perspective(500px);
+	-o-transform: perspective(500px);
+	-ms-transform: perspective(500px);
+	transform: perspective(500px);
+}
+.signpost
+.plank img:hover {
+	-webkit-transform: perspective(500px) rotateX(15deg) rotateY(15deg);
+	-moz-transform: perspective(500px) rotateX(15deg) rotateY(15deg);
+	-o-transform: perspective(500px) rotateX(15deg) rotateY(15deg);
+	-ms-transform: perspective(500px) rotateX(15deg) rotateY(15deg);
+	transform: perspective(500px) rotateX(15deg) rotateY(15deg);
+}
+
+
+
+@media screen and (max-width: 1600px){}
+.catalog-product-view main#maincontent {
+        padding: 0% !important;
+  
+}
+
+.catalog-product-view  .column.main{
+      margin:auto;
+     max-width: 1280px;
+}
+
+/*product page styles*/
+
+.catalog-product-view 
+#max-col-products{background:url(https://www.mingorad.com/pub/media/wysiwyg/bg_palms_prodcut_details.png) no-repeat bottom right;    background-size: 30%;}
+.catalog-product-view .icon_col {width:150px;vertical-align: middle;}
+
+.catalog-product-view .content_col, 
+.catalog-product-view .icon_col {
+    display: table-cell;
+}
+
+
+.catalog-product-view .field.choice.admin__field.admin__field-option.required.selec {
+    box-shadow: inset 0 0 0 rgba(0,0,0,.32), inset 0 1px 8px 0 #335653, 0 0 0 #564141;
+        background-color: #007d5b;
+    cursor: pointer;
+    
+}
+
+.catalog-product-view .value hr{border:none;padding-bottom:50px}
+
+
+
+.catalog-product-view .product-melon-h2o .value h1{
+    color: #00B39A;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+    margin-top:100px;
+}
+
+.catalog-product-view .value h1{
+    margin-top:100px;
+}
+
+.catalog-product-view .value h1:first-child{
+    margin-top:0px;
+}
+
+.catalog-product-view 
+.value p:first-child {
+    font-family: 'Montserrat semibold';
+    font-size: 16px;
+    line-height: 49px;
+    margin-bottom: 140px;
+}
+
+
+.catalog-product-view .value p {
+    font-size: 18px;
+    line-height: 31px;
+    font-family: 'Montserrat regular';
+}
+.product.data.items > .item.title > .switch,
+.catalog-product-view .product.data.items>.item.title>.switch {
+    border-radius: 200px;
+    padding: 0px 30px;
+    line-height: normal;
+    color: #000!important;
+    margin: -15px 9px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    font-size: 39px;
+    line-height: 49px;
+    height: 54px;
+    border: 5px solid transparent;
+    background: transparent;
+}
+.catalog-product-view .product.data.items>.item.title>.switch:hover,
+.product.data.items > .item.title > .switch:hover,
+.catalog-product-view .data.item.title.active a#tab-label-reviews-title,
+.catalog-product-view a#tab-label-reviews-title:hover,
+.catalog-product-view .product.data.items>.item.title.active>.switch {
+  border: 5px solid #4990e2;
+}
+.catalog-product-view div#tab-label-description{border:none;}
+
+
+.catalog-product-view .page-wrapper{
+    background-position: center -390px;
+    background-size: 100%;
+    }
+
+
+.catalog-product-view
+.product.media{
+        margin-top: 80px;
+    
+}
+
+.catalog-product-view div#description, .catalog-product-view div#additional, .catalog-product-view div#reviews {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin-top: 70px;
+}
+
+.catalog-product-view
+.fotorama__stage__frame .fotorama__img{
+    
+ 
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    max-height: initial;
+    max-width: initial;
+}
+.catalog-product-view
+.product.data.items > .item.title {
+    margin: 0 -1px 0 33px;
+}
+
+
+.catalog-product-view
+.product.media .loading-mask{background-color:transparent;}
+
+
+/* Review form styles*/
+#review-form
+input[type=text], textarea {
+    box-shadow: inset 1px 0px 4px 2px rgba(0, 0, 0, 0.03), inset 1px 1px 1px 0px #979797, inset 0px 0px 0px 0px #000;
+    border-radius: 21px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 23px;
+    font-size: 17px;
+    color: #000000;
+    line-height: 20px;
+    font-family: 'Montserrat Regular';
+    border: 1px solid #979797;
+    padding: 23px;
+    letter-spacing: 2px;
+}
+#review-form
+button.action.submit.primary {
+    background: #e36386;
+    border: 2px solid #f8e5e8;
+    border-radius: 200px;
+    padding: 10px 29px;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 300px;
+    width: 100%;
+    color:#fff;
+}
+
+
+#review-form
+button.action.submit.primary,
+#review-form
+button.action.submit.primary:hover{
+    background: #E36386;
+    border: none;
+    border-radius: 32px;
+    padding: 17px 29px;
+    font-size: 21px;
+    text-transform: uppercase;
+    max-width: 100%;
+    width: 100%;
+    font-family: 'Montserrat SemiBold';
+    letter-spacing: 2px;
+}
+#review-form
+.primary.actions-primary {
+    width: 100%;
+    float: none;
+}
+
+#review-form
+.field label {
+    font-family: 'Montserrat SemiBold';
+    font-size: 19px;
+    color: #00B39A;
+    padding-left: 24px;
+    padding-top: 27px;
+    letter-spacing: 0.5px;
+}
+
+
+
+/*minicart form*/
+.minicart-items .product .toggle{
+    border-top: 1px solid #cccccc;
+}
+#minicart-content-wrapper
+.page-header .panel.wrapper a {
+    color: #4dbbd6;
+}
+#minicart-content-wrapper
+button#top-cart-btn-checkout {
+    background: #E36386;
+    border: none;
+    border-radius: 32px;
+    padding: 12px 29px;
+    font-size: 17px;
+    text-transform: uppercase;
+    max-width: 100%;
+    width: 100%;
+    font-family: 'Montserrat SemiBold';
+    letter-spacing: 2px;
+}
+
+
+
+/*check out index index*/
+
+.checkout-index-index
+input.input-text, select.select {
+    box-shadow: inset 1px 0px 4px 2px rgba(0, 0, 0, 0.03), inset 1px 1px 1px 0px #979797, inset 0px 0px 0px 0px #000;
+    border-radius: 21px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 23px;
+    font-size: 17px;
+    color: #000000;
+    line-height: 20px;
+    font-family: 'Montserrat Regular';
+    border: 1px solid #979797;
+    padding: 23px;
+    letter-spacing: 2px;
+    float:none;
+    max-width: 339px;
+}
+
+
+.checkout-index-index .field label,
+.checkout-index-index .opc-wrapper .form-shipping-address .fieldset .field .label{
+    font-family: 'Montserrat SemiBold';
+    font-size: 19px;
+    color: #00B39A;
+    padding-left: 17px;
+    letter-spacing: 0.5px;
+}
+
+.checkout-index-index
+.opc-block-summary > .title {
+    display: block;
+    color: #686868;
+    font-family: 'Montserrat';
+    font-weight: bold !important;
+    color: #42695c!important;
+    line-height: 35px;
+    border-bottom: solid 1px #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+}
+
+
+
+select#K6WY8F1 {
+    width: 95px;
+    margin-left: 20px;
+}
+
+
+.page.messages {
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+/* Signup and create account pages */
+
+.customer-account-login .actions-toolbar > .primary, 
+.customer-account-login .actions-toolbar > .secondary,
+.customer-account-login .login-container .fieldset > .field > .control,
+.customer-account-login .login-container .block{width:100%;float: none;}
+
+.customer-account-login input.input-text,
+.customer-account-create input.input-text, 
+.customer-account-create select.select  {
+    box-shadow: inset 1px 0px 4px 2px rgba(0, 0, 0, 0.03), inset 1px 1px 1px 0px #979797, inset 0px 0px 0px 0px #000;
+    border-radius: 21px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 23px;
+    font-size: 17px;
+    color: #000000;
+    line-height: 20px;
+    font-family: 'Montserrat Regular';
+    border: 1px solid #979797;
+    padding: 23px;
+    letter-spacing: 2px;
+}
+
+.customer-account-login .action.login.primary, 
+.customer-account-create button.action.submit.primary {
+    background: #e36386;
+    border: 2px solid #f8e5e8;
+    border-radius: 200px;
+    padding: 10px 29px;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 360px;
+    width: 100%;
+    color:#fff;
+}
+
+ .customer-account-login
+.login-container .fieldset:after{display:none}
+
+.customer-account-create
+button.action.submit.primary,
+.customer-account-create
+button.action.submit.primary:hover{
+    background: #00B39A;
+    border: none;
+    border-radius: 32px;
+    padding: 10px 40px;
+    font-size: 21px;
+    text-transform: uppercase;
+    max-width: 100%;
+    width: 100%;
+    font-family: 'Montserrat SemiBold';
+    letter-spacing: 2px;
+}
+
+
+
+.customer-account-login .block-new-customer .primary{
+    background: #eef1f1;
+    border: none;
+    border-radius: 32px;
+    padding: 8px 40px;
+    max-width: 100%;
+    width: 100%;
+    
+  
+}
+
+.customer-account-login .block-new-customer .primary a:before{
+    content: 'Sign Up';
+    color:#000;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-family: 'Montserrat SemiBold';
+    letter-spacing: 2px;
+    display:block;
+}
+
+.customer-account-login .block-new-customer .block-content p,
+.customer-account-login .block-new-customer .primary span{display:none;}
+
+.customer-account-login .action.login.primary {
+    margin-top: 40px;
+    margin-right: 0;
+    float: none;
+}
+.customer-account-login .block-new-customer 
+.block-content:before {
+    content: 'Check out faster, Track Orders, and more.';
+    font-size: 19px;
+    font-family: 'Montserrat';
+}
+
+.customer-account-create
+.primary.actions-primary {
+    width: 100%;
+    float: none;
+}
+
+
+
+.customer-account-login .field label,
+.customer-account-create .field label {
+
+    font-family: 'Montserrat SemiBold';
+    font-size: 19px;
+    color: #00B39A;
+    padding-left: 20px;
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+
+.customer-account-login .field label{
+    padding-top:20px;
+    padding-bottom:0px;
+    margin-bottom: 0 !important;
+}
+
+
+
+
+.customer-account-create
+legend.legend span{display:none}
+
+
+
+.customer-account-login .page-title-wrapper,
+.customer-account-login .login-container,
+.customer-account-create form#form-validate,
+.customer-account-create .page-title-wrapper{
+    max-width: 420px;
+    min-width:initial;
+    margin: auto;
+    width: 100%;
+
+}
+
+
+.customer-account-login form .field,
+.customer-account-create form#form-validate .field{
+    max-width:360px;
+    width:100%;
+    margin:auto;
+}
+
+
+.login-container .block-new-customer .actions-toolbar, .customer-account-create .actions-toolbar {
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.customer-account-login .block.block-customer-login .block-title,
+.customer-account-login .page-title-wrapper h1 span,
+.customer-account-create .page-title-wrapper h1 span{display:none}
+
+
+.customer-account-create
+.page-title-wrapper h1:after{
+    font-family:'Bebas Neue';
+    font-size: 70px;
+    content:'CREATE ACCOUNT';
+}
+
+.customer-account-login 
+.page-title-wrapper h1:after{
+    font-family:'Bebas Neue';
+    font-size: 70px;
+    content:'SIGN IN';
+
+}
+
+.customer-account-login .page-wrapper,
+.customer-account-create .page-wrapper {
+    background-image: url(/pub/static/frontend/Mingo/default/en_US/images/cms/page/about/behind-the-brand-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+.customer-account-login .page-main,
+.customer-account-create .page-main{
+    background: url('/pub/static/frontend/Mingo/default/en_US/images/cms/page/about/top-banner.png') repeat-x center top;
+    max-width: 100%;
+    margin-top:-75px;
+    background-size: 100%;
+}
+
+.customer-account-login .page-title-wrapper,
+.customer-account-create
+.page-title-wrapper {
+    margin-top: 360px;
+    text-align: center;
+}
+
+.customer-account-create
+.field.choice.newsletter {
+    clear: both;
+    padding: 10px 25px;
+}
+
+.customer-account-create
+form#form-validate {
+    padding-bottom: 100px;
+}
+
+.customer-account-create
+.field.field-name-firstname .field, 
+.customer-account-create
+.field.field-name-firstname input,
+.customer-account-create
+.field.field-name-lastname .field,
+.customer-account-create
+.field.field-name-lastname input{
+    display: inline-block;
+    width: 168px;
+
+}
+.customer-account-create
+.field.field-name-firstname,
+.customer-account-create
+.field.field-name-lastname {
+   display:table-cell !important;
+}
+
+ 
+.customer-account-create
+fieldset.fieldset.create.account .legend,
+.customer-account-create
+fieldset.fieldset.create.info .legend{display:none;}
+
+
+.customer-account-create
+fieldset.fieldset.create.info {
+    width: 360px;
+    margin: auto;
+}
+
+.customer-account-create
+fieldset.fieldset.create.account >br{display:none;}
+.customer-account-create
+.field.password.required:before {
+    content: '';
+    border: #979797 solid 1px;
+    width: 100%;
+    display: block;
+    margin: 91px -3px 23px;
+}
+
+.customer-account-login
+strong#block-new-customer-heading {
+    font-size: 31px;
+    font-family: 'Montserrat semibold';
+    color: #00B39A;
+}
+
+
+.customer-account-login
+.customer-account-login .action.login.primary {
+    margin-top: 40px;
+}
+
+
+.customer-account-login
+.login-container .block .block-title strong,
+.customer-account-login
+.field.note {
+    display: none;
+}
+
+.customer-account-login
+.login-container .block .block-title{
+    border:none;
+    border-top: 1px solid #e8e8e8;
+    padding-top:50px;
+    margin-bottom: 0;
+}
+
+.customer-account-login
+.login-container .block .block-title:after{
+content: 'Don’t Have an Account Yet?';
+    font-size: 29px;
+    font-family: 'Montserrat semibold';
+    color: #00B39A;
+}
+
+.customer-account-login
+strong#block-new-customer-heading {
+    font-size: 31px;
+    font-family: 'Montserrat semibold';
+    color: #00B39A;
+
+}
+.customer-account-login
+.block.block-new-customer {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+
+
+
+
+/* Products Catalogue View */
+.catalog-category-view .product-card-button button,
+.catalog-category-view .product-card small,
+.catalog-category-view .product-card-price {
+    font-family: 'Montserrat SemiBold';
+}
+
+/*checkout page*/
+
+
+.checkout-index-index .step-title {
+    border-bottom: 1px #6ab9a0 solid;
+}
+
+.opc-wrapper {
+    width: 378px;
+}
+.checkout-index-index 
+.opc-block-summary {
+    width: 413px;
+}
+
+.column.main {
+    max-width: 910px;
+    margin: auto;
+}
+
+.checkout-index-index div#checkout {
+    background: transparent;
+        margin: auto;
+}
+
+.checkout-index-index
+ .page-main {
+    background: url(/pub/static/frontend/Mingo/default/en_US/images/cms/page/about/top-banner.png) repeat-x top;
+    max-width: 100%;
+    margin-top: -230px;
+    background-size: 100%;
+}
+.checkout-index-index
+.columns {
+    margin-top: 280px;
+}
+.checkout-index-index
+ul.opc-progress-bar:before {
+
+    content: 'CHECKOUT';
+    font-size:72px;
+    color:#000;
+    display:block;
+    font-family:'Bebas Neue';
+    
+}
+.checkout-index-index
+.authentication-wrapper {
+    display: none;
+}
+
+.checkout-index-index [name="shippingAddress.telephone"],
+.checkout-index-index [name="shippingAddress.city"],
+.checkout-index-index [name="shippingAddress.region_id"],
+.checkout-index-index [name="shippingAddress.firstname"],
+.checkout-index-index [name="shippingAddress.lastname"]{ 
+    display: table-cell !important;
+
+}
+
+
+.checkout-index-index [name="shippingAddress.postcode"] {
+
+display:inline-block;
+width:40%;
+
+}
+
+
+.checkout-index-index [name="shippingAddress.region_id"] select.select,
+.checkout-index-index [name="shippingAddress.firstname"] input, 
+.checkout-index-index [name="shippingAddress.firstname"] input {
+
+    width: 168px;
+    margin-bottom:20px;
+}
+
+.checkout-index-index [name="shippingAddress.region_id"] select.select,
+.checkout-index-index [name="shippingAddress.country_id"] select.select
+ {   padding: 0 21px;
+    height: 49px;
+}
+
+/*checkout steps*/
+
+
+.checkout-index-index .step-title {
+    font-size: 32px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: center;
+}
+.checkout-index-index
+aside.modal-custom.opc-sidebar.opc-summary-wrapper.custom-slide {margin-top:0}
+
+ul.opc-progress-bar {
+    margin: 0 0 100px;
+}
+
+
+
+.checkout-index-index .opc-progress-bar-item:before, 
+.checkout-index-index .opc-progress-bar-item>span:after, 
+.checkout-index-index .opc-progress-bar-item>span:before {
+    border: 5px solid #E36386;
+}
+
+
+.checkout-index-index .page-wrapper {
+    background-image: url(http://mingorad.com/pub/static/frontend/Mingo/default/en_US/images/cms/page/about/behind-the-brand-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.opc-progress-bar-item > span:after {
+    background: #ffffff;
+    height: 40px;
+    margin-left: -19px;
+    top: 0px;
+    width: 40px;
+    content: counter(i);
+    counter-increment: i;
+    color: #00b39a;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.opc-progress-bar-item._active > span:after {
+    border-color: #E36386;
+}
+
+.checkout-index-index .opc-progress-bar-item:before, .checkout-index-index .opc-progress-bar-item>span:after, .checkout-index-index .opc-progress-bar-item>span:before {
+    border: 5px solid #E36386 !important;
+    color: #E36386;
+}
+
+.opc-progress-bar-item  > span {
+    color: #E36386;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Montserrat';
+}
+
+.checkout-index-index .opc-progress-bar-item:before, 
+.checkout-index-index .opc-progress-bar-item>span:after, 
+.checkout-index-index .opc-progress-bar-item>span:before {
+    background: #ffffff;
+}
+
+/*end checkout steps*/
+
+.checkout-index-index form.form-shipping-address{position:relative;}
+
+/*  - for seperating the city and state input fields 
+    - also changing the text of state/provece to say just state
+*/
+.checkout-index-index [name="shippingAddress.region_id"] div select.select{width: 120px;margin-left:20px;margin-right: 10px;}
+.checkout-index-index [name="shippingAddress.region_id"] span{display:none}
+.checkout-index-index [name="shippingAddress.region_id"] label{position:relative}
+.checkout-index-index [name="shippingAddress.region_id"] label:before {
+    content: 'State';
+    display:block;
+    position:absolute;
+    left: 24px;
+}
+
+.checkout-index-index [name="shippingAddress.region_id"] label.label{padding-left: 77px !important;}
+.checkout-index-index [name="shippingAddress.region_id"] label:after{
+   display:block;
+   width:100%;
+   text-align:right;
+}
+
+/* for zipcode to change to zip */
+.checkout-index-index [name="shippingAddress.postcode"] span{display:none;}
+.checkout-index-index [name="shippingAddress.postcode"] label:before {
+    content: 'Zip';
+}
+.checkout-index-index [name="shippingAddress.telephone"]{position: absolute;bottom: 88px;left: 154px;width: 194px;}
+
+.checkout-index-index .street label { display: none; }
+
+/*check out form special needs for fields end*/
+
+
+/*     checkout shipping method styles    */
+.checkout-index-index .checkout-shipping-method .action.primary , 
+.checkout-index-index .checkout-shipping-method .action.primary:hover,
+.checkout-index-index .checkout-shipping-address .action.primary,
+.checkout-index-index .checkout-shipping-address .action.primary:hover
+{
+    background: #E36386;
+    border: none;
+    border-radius: 32px;
+    padding: 12px 29px;
+    font-size: 17px;
+    text-transform: uppercase;
+    max-width: 100%;
+    width: 100%;
+    font-family: 'Montserrat SemiBold';
+    letter-spacing: 2px;
+}
+
+
+ .checkout-index-index .field .control._with-tooltip input,
+.checkout-index-index .checkout-shipping-method .actions-toolbar > .primary,
+.checkout-index-index .checkout-shipping-method .actions-toolbar > .primary button,
+.checkout-index-index .checkout-shipping-address .actions-toolbar > .primary,
+.checkout-index-index .checkout-shipping-address .actions-toolbar > .primary button
+
+{
+    float:none;
+      width: 100%;
+}
+ .checkout-index-index
+.field-tooltip .field-tooltip-action {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: -43px;
+    margin-top: 9px;
+}
+ .checkout-index-index 
+.block.items-in-cart .content.minicart-items {
+    display: block !important;
+}
+ .checkout-index-index
+.opc-wrapper .shipping-address-item.selected-item{border-color:transparent;}
+ .checkout-index-index
+.opc-wrapper .shipping-address-item {
+    width: 100%;
+}

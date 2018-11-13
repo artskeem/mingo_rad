@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- Remove "Default welcome msg" in header -->
+        <referenceBlock name="header" remove="true" />
+
+        <!-- Remove store/language switcher -->
+        <referenceBlock name="store_language" remove="true" />
+        <referenceBlock name="store_switcher" remove="true" />
+
+        <!-- Remove search from header -->
+        <referenceBlock name="top.search" remove="true" />
+
+        <referenceContainer name="header.panel">
+            <!-- Add custom message template to header -->
+            <block class="Magento\Framework\View\Element\Template" name="header.panel.message" template="Magento_Theme::html/header/message.phtml" after="skip_to_content" />
+
+            <!-- Create wrapper for header.links -->
+            <container name="header.links.wrapper" htmlTag="div" htmlClass="header-links-wrapper" after="-" />
+        </referenceContainer>
+
+        <!-- Change logo file -->
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_img_width" xsi:type="boolean">false</argument>
+                <argument name="logo_img_height" xsi:type="boolean">false</argument>
+            </arguments>
+        </referenceBlock>
+
+        <!-- Move logo to header panel -->
+        <move element="logo" destination="header.panel" after="header.panel.message" />
+
+        <!-- Move header.links into wrapper -->
+        <move element="header.links" destination="header.links.wrapper" before="-" />
+
+        <!-- Move minicart to after header.links -->
+        <move element="minicart" destination="header.links.wrapper" after="-" />
+
+        <!-- Remove Magento's default navigation -->
+        <referenceBlock name="navigation.sections" remove="true" />
+
+        <!-- Create Navigation -->
+        <referenceContainer name="header.container">
+            <block class="Magento\Framework\View\Element\Template" name="header.navigation" template="Magento_Theme::html/header/navigation.phtml" after="header.panel.wrapper">
+                <block class="Magento\Theme\Block\Html\Topmenu" name="catalog.topnav" template="Magento_Theme::html/topmenu.phtml" ttl="3600" before="-"/>
+            </block>
+        </referenceContainer>
+
+        <!-- Remove footer_links -->
+        <referenceBlock name="footer_links" remove="true" />
+        <referenceBlock name="cms_footer_links_container" remove="true" />
+
+        <!-- Move copyright back into footer -->
+        <move element="copyright" destination="footer-container" after="-"/>
+
+        <!-- Create footer -->
+        <referenceContainer name="footer">
+            <block class="Magento\Framework\View\Element\Template" name="footer.navigation" template="Magento_Theme::html/footer/navigation.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="footer.social" template="Magento_Theme::html/footer/social.phtml" />
+        </referenceContainer>
+
+        <!-- Move footer subscript to end -->
+        <move element="form.subscribe" destination="footer" after="-"/>
+    </body>
+</page>

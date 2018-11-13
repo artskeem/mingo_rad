@@ -1,0 +1,21 @@
+{
+    "name": "greenmoney/module-greenmoney",
+    "description": "Greenmoney Greenmoney",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Mage2Gen",
+            "email": "info@mage2gen.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Greenmoney\\Greenmoney\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
