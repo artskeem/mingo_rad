@@ -29,10 +29,10 @@ require(['jquery'], function ($) {
         <a href="javascript:void(0)" class="r-arrow"><img src="/pub/static/frontend/Mingo/default/en_US/images/cms/page/home/right-arrow.png"></a>
     </div>
     
-        https://www.mingorad.com/melon-h2o
+        
    
-    https://www.mingorad.com/coco-keypine
-    https://www.mingorad.com/sugar-cane
+    
+    
     <div class="flavor-image-slider">
         <div id="flavor-slider"></div>
         <div id="flavor-slider-data" style="display: none;">
@@ -41,16 +41,16 @@ require(['jquery'], function ($) {
                     <li data-thumbmail-url="https://www.mingorad.com/electric-razz" data-thumbnail-path="<?php echo $block->getViewFileUrl('images/cms/page/home/flavors/blue_raspberry.png'); ?>" data-thumbnail-text="some text here"></li>
                 </ul>
                 <ul>
-                    <li  data-thumbmail-url="https://www.mingorad.com/electric-razz" data-thumbnail-path="<?php echo $block->getViewFileUrl('images/cms/page/home/flavors/coco_keylime.png'); ?>" data-thumbnail-text="some text here"></li>
+                    <li  data-thumbmail-url="https://www.mingorad.com/coco-keypine" data-thumbnail-path="<?php echo $block->getViewFileUrl('images/cms/page/home/flavors/coco_keylime.png'); ?>" data-thumbnail-text="some text here"></li>
                 </ul>
                 <ul>
-                    <li  data-thumbmail-url="https://www.mingorad.com/electric-razz" data-thumbnail-path="<?php echo $block->getViewFileUrl('images/cms/page/home/flavors/watermelon.png'); ?>" data-thumbnail-text="some text here"></li>
+                    <li  data-thumbmail-url="https://www.mingorad.com/melon-h2o" data-thumbnail-path="<?php echo $block->getViewFileUrl('images/cms/page/home/flavors/watermelon.png'); ?>" data-thumbnail-text="some text here"></li>
                 </ul>
                 <!--ul>
-                    <li data-thumbnail-path="<?php echo $block->getViewFileUrl('images/cms/page/home/flavors/mocha.png'); ?>" data-thumbnail-text="some text here"></li>
+                    <li  data-thumbmail-url="https://www.mingorad.com/mocha-af" data-thumbnail-path="<?php echo $block->getViewFileUrl('images/cms/page/home/flavors/mocha.png'); ?>" data-thumbnail-text="some text here"></li>
                 </ul -->
                 <ul>
-                    <li  data-thumbmail-url="https://www.mingorad.com/electric-razz" data-thumbnail-path="<?php echo $block->getViewFileUrl('images/cms/page/home/flavors/sugar_cane.png'); ?>" data-thumbnail-text="some text here"></li>
+                    <li  data-thumbmail-url="https://www.mingorad.com/sugar-cane" data-thumbnail-path="<?php echo $block->getViewFileUrl('images/cms/page/home/flavors/sugar_cane.png'); ?>" data-thumbnail-text="some text here"></li>
                 </ul>
             </div>
         </div>
@@ -119,21 +119,38 @@ FWDS3DCUtils.onReady(function(){
         startAtCategory: 1,
         showAllCategories: "no",
     });
-    
- 
 
-
-    
     
 });
 
-require(['jquery'], function ($) {
-$(document).ready(function(){
-  	$(".nav_arrows").insertBefore("flavor-slider-fluidwidth");	
-    	console.log("arrows");
-  
 
-    var fire_once = 0;
+
+/*
+////////////////////////// //////////////////////////
+    
+    ** READ COMMENTS BELOW  THIS CAN BE REMOVED **
+          // NOT ORIGINAL PART OF SLIDER
+////////////////////////////////////////////////////
+*/
+
+require(['jquery'], function ($) {
+    
+$(document).ready(function(){
+  
+  
+    // append arrows to the slider
+    // still need to have the clickable 
+    // or get the plugin to work with them
+  
+  	$(".nav_arrows").insertBefore("flavor-slider-fluidwidth");	
+    console.log("nav arrows");
+
+
+    // test array for sliders pop up
+    // may not use just need to get popup to show 
+    // problem is jQuery is no recognizing after the load
+
+
  	var product_content  = [
 	    "Meleon H2O",
 	    "Electric Razz",
@@ -142,26 +159,30 @@ $(document).ready(function(){
 	    "Coco Keypine",
 	];
       
-  jQuery("#flavor-slider-fluidwidth div div div div div").hover(function(){
-	    
-        console.log("slider loaded");
+ 
+        // pop up slider on 3d slider when hover over image
+        // not working and if better way to do it using the plugin
+        // please give it a go since this was a failed attempt
         
-         jQuery("#flavor-slider-fluidwidth div div div div div").each(function(index){
+        
+        jQuery("#flavor-slider-fluidwidth div div div div div").hover(function(){
+	        console.log("slider loaded");
+             jQuery("#flavor-slider-fluidwidth div div div div div").each(function(index){
                 if(!jQuery("div", this).hasClass("tooltip")){
                             jQuery(this).append('<div class="tooltip active" data-tooltip="1" style="top: 84px;left: 12px;z-index: 999998;"><div class="arrow">'+product_content[index]+'</div></div>');
                             console.log(product_content[index]);
                 }
          }); // end foreach
-        
-             
          }); // end hover
-    
-
-
     
 }); // end doc ready
 }); // end jquery
+
 </script>
+
+
+
+
 
 <style>
 /* styles for the tool tip*/
